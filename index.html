@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Dr. Maged Atef El-Essi | Diplomatic Portfolio</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Dr. Maged Atef El-Essi | Diplomatic Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;family=Cairo:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -101,7 +100,7 @@
             },
         }
     </script>
-<style>
+    <style>
         .diplomatic-line {
             height: 1px;
             background: linear-gradient(90deg, transparent, #C9A44C, transparent);
@@ -123,30 +122,94 @@
             box-shadow: 0 4px 15px -3px rgba(201, 164, 76, 0.3);
             border-bottom: 2px solid #C9A44C;
         }
+
+        /* Language Visibility and RTL Overrides */
+        html[lang="en"] .lang-ar {
+            display: none !important;
+        }
+        html[lang="ar"] .lang-en {
+            display: none !important;
+        }
+        html[lang="ar"] {
+            font-family: 'Cairo', sans-serif !important;
+        }
+        html[lang="ar"] body {
+            font-family: 'Cairo', sans-serif !important;
+        }
+        html[lang="ar"] .font-body-md,
+        html[lang="ar"] .font-body-lg,
+        html[lang="ar"] .font-label-caps,
+        html[lang="ar"] .font-headline-md,
+        html[lang="ar"] .font-headline-lg,
+        html[lang="ar"] .font-headline-lg-mobile,
+        html[lang="ar"] .font-display-lg,
+        html[lang="ar"] .font-display-md {
+            font-family: 'Cairo', sans-serif !important;
+        }
+        html[lang="ar"] .rtl\:border-l-0 {
+            border-left-width: 0px !important;
+        }
+        html[lang="ar"] .rtl\:border-r-2 {
+            border-right-width: 2px !important;
+        }
+        html[lang="ar"] .rtl\:pl-0 {
+            padding-left: 0px !important;
+        }
+        html[lang="ar"] .rtl\:pr-6 {
+            padding-right: 1.5rem !important;
+        }
     </style>
 </head>
 <body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
 <!-- TopNavBar -->
 <header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-primary-container/90 backdrop-blur-xl border-b border-secondary/20 shadow-sm transition-all duration-300">
-<div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
-<div class="flex items-center gap-4">
-<img alt="Seal" class="w-12 h-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVYbDRdRgS5WiNBZud4ZLwBMR1_XLRvZkoAuyat0ZdG4UQl5FUSkZL17GMeIBZFuC3yBfPrSYK03-wxyKYH6LQ67yAJ00XHBVgNo6t4XUj4hFNOMsmPviod3HpVAnb_Vnt8WEu-Bf03r7PJXAyvZ02jhhnQxAxdZQt1W0Y1oI_EKe29WHRh-Ltm3-a8-3KTpHxYBc2Ml_JOQgupFYQpm8wP6twlt4V3RIBnRMb1Z7pF4g3Ja-kGPlZ"/>
-<span class="text-label-caps font-label-caps tracking-widest text-primary dark:text-secondary-fixed-dim hidden md:block">
-                    DR. MAGED ATEF EL-ESSI
-                </span>
-</div>
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-secondary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary text-label-caps font-label-caps transition-colors duration-300" href="#hero">Profile</a>
-<a class="text-on-surface-variant dark:text-on-primary-container/70 hover:text-secondary text-label-caps font-label-caps transition-colors duration-300" href="#impact">Impact Map</a>
-<a class="text-on-surface-variant dark:text-on-primary-container/70 hover:text-secondary text-label-caps font-label-caps transition-colors duration-300" href="#leadership">Leadership</a>
-<a class="text-on-surface-variant dark:text-on-primary-container/70 hover:text-secondary text-label-caps font-label-caps transition-colors duration-300" href="#timeline">Timeline</a>
-<a class="text-on-surface-variant dark:text-on-primary-container/70 hover:text-secondary text-label-caps font-label-caps transition-colors duration-300" href="#vision">Vision</a>
-<a class="text-on-surface-variant dark:text-on-primary-container/70 hover:text-secondary text-label-caps font-label-caps transition-colors duration-300" href="#media">Media</a>
-</nav>
-<button class="bg-primary-container text-on-primary px-8 py-2 text-label-caps font-label-caps hover:bg-diplomatic-navy/90 transition-all duration-300 rounded-sm">
-                Connect
+    <div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+        <div class="flex items-center gap-4">
+            <img alt="Seal" class="w-12 h-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVYbDRdRgS5WiNBZud4ZLwBMR1_XLRvZkoAuyat0ZdG4UQl5FUSkZL17GMeIBZFuC3yBfPrSYK03-wxyKYH6LQ67yAJ00XHBVgNo6t4XUj4hFNOMsmPviod3HpVAnb_Vnt8WEu-Bf03r7PJXAyvZ02jhhnQxAxdZQt1W0Y1oI_EKe29WHRh-Ltm3-a8-3KTpHxYBc2Ml_JOQgupFYQpm8wP6twlt4V3RIBnRMb1Z7pF4g3Ja-kGPlZ"/>
+            <span class="text-label-caps font-label-caps tracking-widest text-primary dark:text-secondary-fixed-dim hidden md:block">
+                <span class="lang-en">DR. MAGED ATEF EL-ESSI</span>
+                <span class="lang-ar">د. ماجد عاطف العسي</span>
+            </span>
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+            <a class="text-secondary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary text-label-caps font-label-caps transition-colors duration-300" href="#hero">
+                <span class="lang-en">Profile</span>
+                <span class="lang-ar">الملف الشخصي</span>
+            </a>
+            <a class="text-on-surface-variant dark:text-on-primary-container/70 hover:text-secondary text-label-caps font-label-caps transition-colors duration-300" href="#impact">
+                <span class="lang-en">Impact Map</span>
+                <span class="lang-ar">خريطة التأثير</span>
+            </a>
+            <a class="text-on-surface-variant dark:text-on-primary-container/70 hover:text-secondary text-label-caps font-label-caps transition-colors duration-300" href="#leadership">
+                <span class="lang-en">Leadership</span>
+                <span class="lang-ar">القيادة</span>
+            </a>
+            <a class="text-on-surface-variant dark:text-on-primary-container/70 hover:text-secondary text-label-caps font-label-caps transition-colors duration-300" href="#timeline">
+                <span class="lang-en">Timeline</span>
+                <span class="lang-ar">المسيرة المهنية</span>
+            </a>
+            <a class="text-on-surface-variant dark:text-on-primary-container/70 hover:text-secondary text-label-caps font-label-caps transition-colors duration-300" href="#vision">
+                <span class="lang-en">Vision</span>
+                <span class="lang-ar">الرؤية</span>
+            </a>
+            <a class="text-on-surface-variant dark:text-on-primary-container/70 hover:text-secondary text-label-caps font-label-caps transition-colors duration-300" href="#media">
+                <span class="lang-en">Media</span>
+                <span class="lang-ar">الإعلام</span>
+            </a>
+        </nav>
+        <div class="flex items-center gap-4">
+            <!-- Language Switcher Button -->
+            <button onclick="toggleLanguage()" class="flex items-center gap-2 text-on-surface-variant dark:text-on-primary-container/70 hover:text-secondary transition-all duration-300 px-3 py-1.5 rounded border border-secondary/20 hover:border-secondary shadow-sm">
+                <span class="material-symbols-outlined text-lg">language</span>
+                <span class="text-xs font-semibold tracking-wider lang-en">العربية</span>
+                <span class="text-xs font-semibold tracking-wider lang-ar">EN</span>
             </button>
-</div>
+            <button class="bg-primary-container text-on-primary px-8 py-2 text-label-caps font-label-caps hover:bg-diplomatic-navy/90 transition-all duration-300 rounded-sm">
+                <span class="lang-en">Connect</span>
+                <span class="lang-ar">تواصل</span>
+            </button>
+        </div>
+    </div>
 </header>
 <main class="pt-20">
 <!-- Hero Section -->
@@ -255,25 +318,34 @@ void main() {
 <div class="lg:col-span-7">
 <div class="mb-6 inline-flex items-center gap-4 text-royal-gold">
 <div class="w-12 h-[1px] bg-royal-gold"></div>
-<span class="text-label-caps font-label-caps">ESTEEMED DIPLOMACY</span>
+<span class="text-label-caps font-label-caps">
+    <span class="lang-en">ESTEEMED DIPLOMACY</span>
+    <span class="lang-ar">دبلوماسية مرموقة</span>
+</span>
 </div>
 <h1 class="font-display-lg text-display-lg text-diplomatic-navy mb-4">
-                        Dr. Maged Atef El-Essi
-                    </h1>
+    <span class="lang-en">Dr. Maged Atef El-Essi</span>
+    <span class="lang-ar">د. ماجد عاطف العسي</span>
+</h1>
 <h2 class="font-headline-md text-headline-md text-secondary mb-8">
-                        Senior Diplomat | Secretary General of the Arab Youth Union for Creativity and Innovation
-                    </h2>
+    <span class="lang-en">Senior Diplomat | Secretary General of the Arab Youth Union for Creativity and Innovation</span>
+    <span class="lang-ar">دبلوماسي رفيع | الأمين العام للاتحاد العربي للشباب للإبداع والابتكار</span>
+</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-10 leading-relaxed">
-                        Building bridges between Arab youth, innovation, and international cooperation to secure a sustainable and creative regional future.
-                    </p>
+    <span class="lang-en">Building bridges between Arab youth, innovation, and international cooperation to secure a sustainable and creative regional future.</span>
+    <span class="lang-ar">بناء الجسور بين الشباب العربي، والابتكار، والتعاون الدولي لتأمين مستقبل إقليمي مستدام ومبدع.</span>
+</p>
 <div class="flex flex-wrap gap-6">
 <a class="bg-diplomatic-navy text-on-primary px-10 py-4 font-label-caps text-label-caps rounded-sm border-b-2 border-royal-gold hover:translate-y-[-2px] transition-all duration-300 flex items-center gap-2" href="#journey">
-                            Explore the Journey
-                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    <span class="lang-en">Explore the Journey</span>
+    <span class="lang-ar">استكشف المسيرة</span>
+    <span class="material-symbols-outlined text-sm lang-en">arrow_forward</span>
+    <span class="material-symbols-outlined text-sm lang-ar">arrow_back</span>
 </a>
 <a class="bg-white/50 backdrop-blur border border-outline/20 text-on-surface px-10 py-4 font-label-caps text-label-caps rounded-sm hover:bg-white/80 transition-all duration-300" href="#vision">
-                            Diplomatic Vision
-                        </a>
+    <span class="lang-en">Diplomatic Vision</span>
+    <span class="lang-ar">الرؤية الدبلوماسية</span>
+</a>
 </div>
 </div>
 <div class="lg:col-span-5 relative">
@@ -372,18 +444,37 @@ animate();
 </div>
 </div>
 <div class="lg:col-span-7 order-1 lg:order-2">
-<h2 class="font-display-md text-display-md text-diplomatic-navy mb-8">Distinguished Statesman</h2>
+<h2 class="font-display-md text-display-md text-diplomatic-navy mb-8">
+    <span class="lang-en">Distinguished Statesman</span>
+    <span class="lang-ar">رجل دولة متميز</span>
+</h2>
 <div class="space-y-6 text-on-surface-variant font-body-lg">
-<p>Dr. Maged Atef El-Essi stands as a pivotal figure in the modern Arab diplomatic landscape. As the Secretary General of the Arab Youth Union for Creativity and Innovation (AYUCI), he has dedicated his career to fostering a pan-Arab ecosystem where young minds can thrive through intellectual and creative pursuits.</p>
-<p>His leadership is characterized by a unique blend of traditional diplomatic protocol and forward-thinking innovation strategies. Under his guidance, the Union has successfully launched numerous regional initiatives that bridge the gap between academic potential and economic opportunity.</p>
+<p class="lang-en">Dr. Maged Atef El-Essi stands as a pivotal figure in the modern Arab diplomatic landscape. As the Secretary General of the Arab Youth Union for Creativity and Innovation (AYUCI), he has dedicated his career to fostering a pan-Arab ecosystem where young minds can thrive through intellectual and creative pursuits.</p>
+<p class="lang-ar">يقف الدكتور ماجد عاطف العسي كشخصية محورية في المشهد الدبلوماسي العربي الحديث. وبصفته الأمين العام للاتحاد العربي للشباب للإبداع والابتكار، فقد كرس مسيرته المهنية لتعزيز منظومة عمل عربية مشتركة يمكن للعقول الشابة من خلالها أن تزدهر من خلال المساعي الفكرية والإبداعية.</p>
+
+<p class="lang-en">His leadership is characterized by a unique blend of traditional diplomatic protocol and forward-thinking innovation strategies. Under his guidance, the Union has successfully launched numerous regional initiatives that bridge the gap between academic potential and economic opportunity.</p>
+<p class="lang-ar">تتميز قيادته بمزيج فريد من البروتوكول الدبلوماسي التقليدي واستراتيجيات الابتكار ذات الرؤية المستقبلية. وتحت توجيهه، نجح الاتحاد في إطلاق العديد من المبادرات الإقليمية التي تسد الفجوة بين الإمكانات الأكاديمية والفرص الاقتصادية.</p>
+
 <div class="grid grid-cols-2 gap-8 pt-6">
-<div class="border-l-2 border-royal-gold pl-6">
-<h4 class="font-headline-md text-headline-md text-diplomatic-navy">AYUCI</h4>
-<p class="text-label-caps font-label-caps text-secondary mt-1">LEADERSHIP</p>
+<div class="border-l-2 border-royal-gold pl-6 rtl:border-l-0 rtl:border-r-2 rtl:pl-0 rtl:pr-6">
+<h4 class="font-headline-md text-headline-md text-diplomatic-navy">
+    <span class="lang-en">AYUCI</span>
+    <span class="lang-ar">الاتحاد العربي</span>
+</h4>
+<p class="text-label-caps font-label-caps text-secondary mt-1">
+    <span class="lang-en">LEADERSHIP</span>
+    <span class="lang-ar">القيادة</span>
+</p>
 </div>
-<div class="border-l-2 border-royal-gold pl-6">
-<h4 class="font-headline-md text-headline-md text-diplomatic-navy">Global</h4>
-<p class="text-label-caps font-label-caps text-secondary mt-1">RECOGNITION</p>
+<div class="border-l-2 border-royal-gold pl-6 rtl:border-l-0 rtl:border-r-2 rtl:pl-0 rtl:pr-6">
+<h4 class="font-headline-md text-headline-md text-diplomatic-navy">
+    <span class="lang-en">Global</span>
+    <span class="lang-ar">عالمي</span>
+</h4>
+<p class="text-label-caps font-label-caps text-secondary mt-1">
+    <span class="lang-en">RECOGNITION</span>
+    <span class="lang-ar">التقدير والاعتراف</span>
+</p>
 </div>
 </div>
 </div>
@@ -396,20 +487,44 @@ animate();
 <div class="max-w-container-max mx-auto px-margin-desktop">
 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
 <div>
-<div class="font-display-md text-display-md text-royal-gold">22</div>
-<div class="text-label-caps font-label-caps tracking-widest text-on-primary/60 mt-2">ARAB NATIONS REACHED</div>
+<div class="font-display-md text-display-md text-royal-gold">
+    <span class="lang-en">22</span>
+    <span class="lang-ar">٢٢</span>
+</div>
+<div class="text-label-caps font-label-caps tracking-widest text-on-primary/60 mt-2">
+    <span class="lang-en">ARAB NATIONS REACHED</span>
+    <span class="lang-ar">دولة عربية تم الوصول إليها</span>
+</div>
 </div>
 <div>
-<div class="font-display-md text-display-md text-royal-gold">500+</div>
-<div class="text-label-caps font-label-caps tracking-widest text-on-primary/60 mt-2">YOUTH INITIATIVES</div>
+<div class="font-display-md text-display-md text-royal-gold">
+    <span class="lang-en">500+</span>
+    <span class="lang-ar">+٥٠٠</span>
+</div>
+<div class="text-label-caps font-label-caps tracking-widest text-on-primary/60 mt-2">
+    <span class="lang-en">YOUTH INITIATIVES</span>
+    <span class="lang-ar">مبادرة شبابية</span>
+</div>
 </div>
 <div>
-<div class="font-display-md text-display-md text-royal-gold">150+</div>
-<div class="text-label-caps font-label-caps tracking-widest text-on-primary/60 mt-2">GLOBAL PARTNERSHIPS</div>
+<div class="font-display-md text-display-md text-royal-gold">
+    <span class="lang-en">150+</span>
+    <span class="lang-ar">+١٥٠</span>
+</div>
+<div class="text-label-caps font-label-caps tracking-widest text-on-primary/60 mt-2">
+    <span class="lang-en">GLOBAL PARTNERSHIPS</span>
+    <span class="lang-ar">شراكة عالمية</span>
+</div>
 </div>
 <div>
-<div class="font-display-md text-display-md text-royal-gold">30</div>
-<div class="text-label-caps font-label-caps tracking-widest text-on-primary/60 mt-2">YEARS OF SERVICE</div>
+<div class="font-display-md text-display-md text-royal-gold">
+    <span class="lang-en">30</span>
+    <span class="lang-ar">٣٠</span>
+</div>
+<div class="text-label-caps font-label-caps tracking-widest text-on-primary/60 mt-2">
+    <span class="lang-en">YEARS OF SERVICE</span>
+    <span class="lang-ar">عاماً من الخدمة</span>
+</div>
 </div>
 </div>
 </div>
@@ -418,22 +533,35 @@ animate();
 <section class="py-24 bg-surface relative overflow-hidden" id="impact">
 <div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 <div class="lg:col-span-5">
-<h2 class="font-display-md text-display-md text-diplomatic-navy mb-6">Regional Impact &amp; Influence</h2>
+<h2 class="font-display-md text-display-md text-diplomatic-navy mb-6">
+    <span class="lang-en">Regional Impact &amp; Influence</span>
+    <span class="lang-ar">التأثير والنفوذ الإقليمي</span>
+</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
-                        Our vision extends across the entire Arab region, empowering youth from the Maghreb to the Levant and the Gulf. We operate as a unified force for innovation.
-                    </p>
+    <span class="lang-en">Our vision extends across the entire Arab region, empowering youth from the Maghreb to the Levant and the Gulf. We operate as a unified force for innovation.</span>
+    <span class="lang-ar">تمتد رؤيتنا عبر المنطقة العربية بأكملها، لتمكين الشباب من المغرب العربي إلى المشرق والخليج. نحن نعمل كقوة موحدة للابتكار.</span>
+</p>
 <ul class="space-y-4">
 <li class="flex items-start gap-3">
 <span class="material-symbols-outlined text-royal-gold">check_circle</span>
-<span class="font-body-md text-on-surface">Integrated Youth Creative Centers in 12 capitals.</span>
+<span class="font-body-md text-on-surface">
+    <span class="lang-en">Integrated Youth Creative Centers in 12 capitals.</span>
+    <span class="lang-ar">مراكز إبداعية شبابية متكاملة في ١٢ عاصمة.</span>
+</span>
 </li>
 <li class="flex items-start gap-3">
 <span class="material-symbols-outlined text-royal-gold">check_circle</span>
-<span class="font-body-md text-on-surface">Cross-border educational exchange programs.</span>
+<span class="font-body-md text-on-surface">
+    <span class="lang-en">Cross-border educational exchange programs.</span>
+    <span class="lang-ar">برامج التبادل التعليمي العابرة للحدود.</span>
+</span>
 </li>
 <li class="flex items-start gap-3">
 <span class="material-symbols-outlined text-royal-gold">check_circle</span>
-<span class="font-body-md text-on-surface">Regional innovation patents fund.</span>
+<span class="font-body-md text-on-surface">
+    <span class="lang-en">Regional innovation patents fund.</span>
+    <span class="lang-ar">صندوق براءات الاختراع والابتكار الإقليمي.</span>
+</span>
 </li>
 </ul>
 </div>
@@ -441,10 +569,10 @@ animate();
 <!-- STITCH_THREEJS_START:ANIMATION_4 class="w-full h-full scale-125" -->
 <div class="w-full h-full scale-125" style="display:block;">
 <script src="https://ajax.googleapis.com/ajax/libs/threejs/r125/three.min.js"></script>
-<div id="threejs-container-ANIMATION_4" style="width:100%;height:100%"></div>
+<div id="threejs-container-ANIMATION_4_2" style="width:100%;height:100%"></div>
 <script>
 (function() {
-  const container = document.getElementById('threejs-container-ANIMATION_4');
+  const container = document.getElementById('threejs-container-ANIMATION_4_2');
   const devicePixelRatio = window.devicePixelRatio || 1;
   const width = container.clientWidth || window.innerWidth;
 const height = container.clientHeight || window.innerHeight;
@@ -519,10 +647,10 @@ animate();
 <section class="py-24 bg-primary-container text-on-primary overflow-hidden relative" id="leadership">
 <!-- STITCH_SHADER_START:ANIMATION_3 class="absolute inset-0 w-full h-full opacity-20" -->
 <div class="absolute inset-0 w-full h-full opacity-20" style="display:block;">
-<canvas id="shader-canvas-ANIMATION_3" style="display:block;width:100%;height:100%"></canvas>
+<canvas id="shader-canvas-ANIMATION_3_2" style="display:block;width:100%;height:100%"></canvas>
 <script>
 (function() {
-  const canvas = document.getElementById('shader-canvas-ANIMATION_3');
+  const canvas = document.getElementById('shader-canvas-ANIMATION_3_2');
 
   // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
   // This fires on initial layout and whenever the element is resized.
@@ -618,8 +746,14 @@ void main() {
 <!-- STITCH_SHADER_END:ANIMATION_3 -->
 <div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
 <div class="text-center max-w-3xl mx-auto mb-16">
-<h2 class="font-display-md text-display-md mb-6">Leadership at AYUCI</h2>
-<p class="font-body-lg text-on-primary/80">Forging strategic partnerships and building the foundations for a creative Arab generation.</p>
+<h2 class="font-display-md text-display-md mb-6">
+    <span class="lang-en">Leadership at AYUCI</span>
+    <span class="lang-ar">القيادة في الاتحاد العربي</span>
+</h2>
+<p class="font-body-lg text-on-primary/80">
+    <span class="lang-en">Forging strategic partnerships and building the foundations for a creative Arab generation.</span>
+    <span class="lang-ar">صياغة شراكات استراتيجية وبناء أسس جيل عربي مبدع.</span>
+</p>
 </div>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 <div class="glass-card p-1 text-on-surface overflow-hidden rounded-lg">
@@ -628,13 +762,25 @@ void main() {
 <div class="space-y-8">
 <div class="p-8 border border-on-primary/10 rounded-sm hover:bg-on-primary/5 transition-all">
 <div class="text-royal-gold mb-4"><span class="material-symbols-outlined text-4xl">handshake</span></div>
-<h3 class="font-headline-md text-headline-md mb-2">Strategic Partnerships</h3>
-<p class="font-body-md text-on-primary/70">Coordinating with UN agencies and regional governments to align youth innovation with global sustainable development goals.</p>
+<h3 class="font-headline-md text-headline-md mb-2">
+    <span class="lang-en">Strategic Partnerships</span>
+    <span class="lang-ar">شراكات استراتيجية</span>
+</h3>
+<p class="font-body-md text-on-primary/70">
+    <span class="lang-en">Coordinating with UN agencies and regional governments to align youth innovation with global sustainable development goals.</span>
+    <span class="lang-ar">التنسيق مع وكالات الأمم المتحدة والحكومات الإقليمية لمواءمة ابتكارات الشباب مع أهداف التنمية المستدامة العالمية.</span>
+</p>
 </div>
 <div class="p-8 border border-on-primary/10 rounded-sm hover:bg-on-primary/5 transition-all">
 <div class="text-royal-gold mb-4"><span class="material-symbols-outlined text-4xl">psychology</span></div>
-<h3 class="font-headline-md text-headline-md mb-2">Intellectual Advocacy</h3>
-<p class="font-body-md text-on-primary/70">Championing the rights of Arab innovators and creative professionals on the global stage.</p>
+<h3 class="font-headline-md text-headline-md mb-2">
+    <span class="lang-en">Intellectual Advocacy</span>
+    <span class="lang-ar">الدعم والتمكين الفكري</span>
+</h3>
+<p class="font-body-md text-on-primary/70">
+    <span class="lang-en">Championing the rights of Arab innovators and creative professionals on the global stage.</span>
+    <span class="lang-ar">الدفاع عن حقوق المبتكرين والمبدعين العرب ودعمهم على الساحة العالمية.</span>
+</p>
 </div>
 </div>
 </div>
@@ -644,36 +790,69 @@ void main() {
 <section class="py-32 bg-surface" id="timeline">
 <div class="max-w-container-max mx-auto px-margin-desktop">
 <div class="mb-20 text-center">
-<h2 class="font-display-md text-display-md text-diplomatic-navy">Timeline of Achievement</h2>
+<h2 class="font-display-md text-display-md text-diplomatic-navy">
+    <span class="lang-en">Timeline of Achievement</span>
+    <span class="lang-ar">مسيرة الإنجازات</span>
+</h2>
 <div class="diplomatic-line w-48 mx-auto mt-6"></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
 <!-- Achievement Cards (Bento Style) -->
 <div class="glass-card p-8 group hover:shadow-xl transition-all duration-500 lg:col-span-2">
 <span class="text-royal-gold font-bold text-label-caps mb-4 block">2023</span>
-<h4 class="font-headline-md text-headline-md text-diplomatic-navy mb-4">Global Diplomacy Award</h4>
-<p class="text-on-surface-variant font-body-md mb-6">Received the highest honors for fostering intercultural youth dialogue at the UN headquarters.</p>
+<h4 class="font-headline-md text-headline-md text-diplomatic-navy mb-4">
+    <span class="lang-en">Global Diplomacy Award</span>
+    <span class="lang-ar">جائزة الدبلوماسية العالمية</span>
+</h4>
+<p class="text-on-surface-variant font-body-md mb-6">
+    <span class="lang-en">Received the highest honors for fostering intercultural youth dialogue at the UN headquarters.</span>
+    <span class="lang-ar">الحصول على أرفع الأوسمة لتعزيز الحوار الشبابي بين الثقافات في مقر الأمم المتحدة.</span>
+</p>
 <div class="h-1 bg-royal-gold/20 w-0 group-hover:w-full transition-all duration-700"></div>
 </div>
 <div class="glass-card p-8 group hover:shadow-xl transition-all duration-500">
 <span class="text-royal-gold font-bold text-label-caps mb-4 block">2022</span>
-<h4 class="font-headline-md text-headline-md text-diplomatic-navy mb-4">AYUCI Rebrand</h4>
-<p class="text-on-surface-variant font-body-md">Spearheaded the transformation of the Union into a modern digital hub.</p>
+<h4 class="font-headline-md text-headline-md text-diplomatic-navy mb-4">
+    <span class="lang-en">AYUCI Rebrand</span>
+    <span class="lang-ar">إعادة الهيكلة الرقمية للاتحاد</span>
+</h4>
+<p class="text-on-surface-variant font-body-md">
+    <span class="lang-en">Spearheaded the transformation of the Union into a modern digital hub.</span>
+    <span class="lang-ar">قيادة تحول الاتحاد العربي إلى مركز رقمي تفاعلي حديث.</span>
+</p>
 </div>
 <div class="glass-card p-8 group hover:shadow-xl transition-all duration-500 lg:col-span-2">
 <span class="text-royal-gold font-bold text-label-caps mb-4 block">2021</span>
-<h4 class="font-headline-md text-headline-md text-diplomatic-navy mb-4">Regional Innovation Summit</h4>
-<p class="text-on-surface-variant font-body-md">Organized the largest gathering of Arab creative tech entrepreneurs in Cairo.</p>
+<h4 class="font-headline-md text-headline-md text-diplomatic-navy mb-4">
+    <span class="lang-en">Regional Innovation Summit</span>
+    <span class="lang-ar">قمة الابتكار الإقليمية</span>
+</h4>
+<p class="text-on-surface-variant font-body-md">
+    <span class="lang-en">Organized the largest gathering of Arab creative tech entrepreneurs in Cairo.</span>
+    <span class="lang-ar">تنظيم أكبر تجمع لرواد الأعمال التكنولوجيين المبدعين العرب في القاهرة.</span>
+</p>
 </div>
 <div class="glass-card p-8 group hover:shadow-xl transition-all duration-500 lg:col-span-3">
 <span class="text-royal-gold font-bold text-label-caps mb-4 block">2019 - 2020</span>
-<h4 class="font-headline-md text-headline-md text-diplomatic-navy mb-4">Youth Resilience Initiative</h4>
-<p class="text-on-surface-variant font-body-md">Led pan-Arab remote learning and creative support programs during global disruptions.</p>
+<h4 class="font-headline-md text-headline-md text-diplomatic-navy mb-4">
+    <span class="lang-en">Youth Resilience Initiative</span>
+    <span class="lang-ar">مبادرة مرونة الشباب</span>
+</h4>
+<p class="text-on-surface-variant font-body-md">
+    <span class="lang-en">Led pan-Arab remote learning and creative support programs during global disruptions.</span>
+    <span class="lang-ar">قيادة برامج التعليم عن بعد والدعم الإبداعي في جميع أنحاء الوطن العربي خلال الاضطرابات العالمية.</span>
+</p>
 </div>
 <div class="glass-card p-8 group hover:shadow-xl transition-all duration-500 lg:col-span-2">
 <span class="text-royal-gold font-bold text-label-caps mb-4 block">2018</span>
-<h4 class="font-headline-md text-headline-md text-diplomatic-navy mb-4">Cultural Heritage Fund</h4>
-<p class="text-on-surface-variant font-body-md">Established the $50M fund for preserving digital Arab historical archives.</p>
+<h4 class="font-headline-md text-headline-md text-diplomatic-navy mb-4">
+    <span class="lang-en">Cultural Heritage Fund</span>
+    <span class="lang-ar">صندوق التراث الثقافي</span>
+</h4>
+<p class="text-on-surface-variant font-body-md">
+    <span class="lang-en">Established the $50M fund for preserving digital Arab historical archives.</span>
+    <span class="lang-ar">تأسيس صندوق بقيمة ٥٠ مليون دولار لحفظ الأرشيف التاريخي العربي الرقمي.</span>
+</p>
 </div>
 </div>
 </div>
@@ -684,12 +863,19 @@ void main() {
 <div class="max-w-3xl mx-auto px-margin-desktop relative z-10 text-center">
 <span class="material-symbols-outlined text-royal-gold text-6xl mb-8">format_quote</span>
 <blockquote class="font-display-md text-headline-lg-mobile md:text-headline-lg text-on-primary italic leading-snug mb-12">
-                    "Creativity is the diplomatic language of the future. By investing in the innovative spirit of Arab youth today, we are securing the regional stability and prosperity of tomorrow."
-                </blockquote>
+    <span class="lang-en">"Creativity is the diplomatic language of the future. By investing in the innovative spirit of Arab youth today, we are securing the regional stability and prosperity of tomorrow."</span>
+    <span class="lang-ar">"الإبداع هو اللغة الدبلوماسية للمستقبل. من خلال الاستثمار في الروح الابتكارية للشباب العربي اليوم، فإننا نضمن الاستقرار الإقليمي والازدهار للغد."</span>
+</blockquote>
 <div class="flex flex-col items-center">
 <div class="w-12 h-[1px] bg-royal-gold mb-4"></div>
-<cite class="text-label-caps font-label-caps text-royal-gold not-italic tracking-widest uppercase">Dr. Maged Atef El-Essi</cite>
-<span class="text-on-primary/60 text-body-md mt-2">Statesman &amp; Visionary</span>
+<cite class="text-label-caps font-label-caps text-royal-gold not-italic tracking-widest uppercase">
+    <span class="lang-en">Dr. Maged Atef El-Essi</span>
+    <span class="lang-ar">د. ماجد عاطف العسي</span>
+</cite>
+<span class="text-on-primary/60 text-body-md mt-2">
+    <span class="lang-en">Statesman &amp; Visionary</span>
+    <span class="lang-ar">رجل دولة ورؤيوي</span>
+</span>
 </div>
 </div>
 </section>
@@ -698,18 +884,33 @@ void main() {
 <div class="max-w-container-max mx-auto px-margin-desktop">
 <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
 <div>
-<h2 class="font-display-md text-display-md text-diplomatic-navy">Media Archive</h2>
-<p class="font-body-lg text-on-surface-variant mt-2">Visual highlights from recent international missions and regional summits.</p>
+<h2 class="font-display-md text-display-md text-diplomatic-navy">
+    <span class="lang-en">Media Archive</span>
+    <span class="lang-ar">الأرشيف الإعلامي</span>
+</h2>
+<p class="font-body-lg text-on-surface-variant mt-2">
+    <span class="lang-en">Visual highlights from recent international missions and regional summits.</span>
+    <span class="lang-ar">لقطات بارزة من البعثات الدولية والقمم الإقليمية الأخيرة.</span>
+</p>
 </div>
-<a class="text-secondary font-label-caps text-label-caps border-b border-secondary hover:text-royal-gold hover:border-royal-gold transition-all" href="#">View All Archives</a>
+<a class="text-secondary font-label-caps text-label-caps border-b border-secondary hover:text-royal-gold hover:border-royal-gold transition-all" href="#">
+    <span class="lang-en">View All Archives</span>
+    <span class="lang-ar">عرض الأرشيف بأكمله</span>
+</a>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-12 gap-4 h-[700px]">
 <div class="md:col-span-8 group relative overflow-hidden rounded-sm">
 <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="A panoramic high-resolution shot of a major international summit. Dr. Maged Atef El-Essi is center-stage at a wide mahogany table with prominent global leaders, including UN representatives. The hall is massive, with ornate ceilings and a forest of international flags. The lighting is cinematic, highlighting the gravity of the diplomatic discussions. Deep blues and rich golds dominate the color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_9SlmeMeolU5EKIAbg51d1_n8eFLivrt9vPKlQzQaz06oU4L2ZPfldIg1urcJ330oreBo6tEGmHfJBfp4PgJHW7a3lYvS9cXTBKFeCtkzE3c9A41Ezj_pLQXHbzPojqEg7JmrjdpLCtbCwRZzysfuWnOfy7Qe4rb6Sq2mfvelORAOpQ8Nui5_w5LAJPRvAwefJ-kjnRSwzfXu2SYSn_eGpoWSEie22K_HO-yXDrNxlzdDSWGIVxqc"/>
 <div class="absolute inset-0 bg-diplomatic-navy/20 group-hover:bg-transparent transition-all"></div>
 <div class="absolute bottom-6 left-6 text-white z-10 opacity-0 group-hover:opacity-100 transition-all">
-<h5 class="font-headline-md">High-Level Policy Signing</h5>
-<p class="text-label-caps">Cairo Summit, 2023</p>
+<h5 class="font-headline-md">
+    <span class="lang-en">High-Level Policy Signing</span>
+    <span class="lang-ar">توقيع السياسات رفيعة المستوى</span>
+</h5>
+<p class="text-label-caps">
+    <span class="lang-en">Cairo Summit, 2023</span>
+    <span class="lang-ar">قمة القاهرة، ٢٠٢٣</span>
+</p>
 </div>
 </div>
 <div class="md:col-span-4 grid grid-rows-2 gap-4">
@@ -730,17 +931,35 @@ void main() {
 <footer class="bg-primary-container dark:bg-primary-container w-full pt-20 pb-10 border-t border-secondary/30">
 <div class="flex flex-col items-center gap-unit px-margin-desktop w-full max-w-container-max mx-auto">
 <img alt="Seal" class="w-20 h-20 mb-6 opacity-80 hover:opacity-100 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVYbDRdRgS5WiNBZud4ZLwBMR1_XLRvZkoAuyat0ZdG4UQl5FUSkZL17GMeIBZFuC3yBfPrSYK03-wxyKYH6LQ67yAJ00XHBVgNo6t4XUj4hFNOMsmPviod3HpVAnb_Vnt8WEu-Bf03r7PJXAyvZ02jhhnQxAxdZQt1W0Y1oI_EKe29WHRh-Ltm3-a8-3KTpHxYBc2Ml_JOQgupFYQpm8wP6twlt4V3RIBnRMb1Z7pF4g3Ja-kGPlZ"/>
-<h3 class="text-headline-md font-headline-md text-secondary-fixed mb-8">Dr. Maged Atef El-Essi</h3>
+<h3 class="text-headline-md font-headline-md text-secondary-fixed mb-8">
+    <span class="lang-en">Dr. Maged Atef El-Essi</span>
+    <span class="lang-ar">د. ماجد عاطف العسي</span>
+</h3>
 <div class="flex flex-wrap justify-center gap-12 mb-12">
-<a class="text-on-primary/60 text-label-caps font-label-caps hover:text-secondary-fixed transition-all" href="#">Privacy Policy</a>
-<a class="text-on-primary/60 text-label-caps font-label-caps hover:text-secondary-fixed transition-all" href="#">Diplomatic Protocol</a>
-<a class="text-on-primary/60 text-label-caps font-label-caps hover:text-secondary-fixed transition-all" href="#">Contact Office</a>
+<a class="text-on-primary/60 text-label-caps font-label-caps hover:text-secondary-fixed transition-all" href="#">
+    <span class="lang-en">Privacy Policy</span>
+    <span class="lang-ar">سياسة الخصوصية</span>
+</a>
+<a class="text-on-primary/60 text-label-caps font-label-caps hover:text-secondary-fixed transition-all" href="#">
+    <span class="lang-en">Diplomatic Protocol</span>
+    <span class="lang-ar">البروتوكول الدبلوماسي</span>
+</a>
+<a class="text-on-primary/60 text-label-caps font-label-caps hover:text-secondary-fixed transition-all" href="#">
+    <span class="lang-en">Contact Office</span>
+    <span class="lang-ar">مكتب الاتصال</span>
+</a>
 </div>
 <div class="diplomatic-line w-full max-w-lg mb-8 opacity-30"></div>
 <p class="text-on-primary/60 text-body-md font-body-md text-center max-w-2xl px-6">
-                © 2024 Arab Youth Union for Creativity and Innovation. All Rights Reserved. <br/>
-                Supporting the next generation of Arab leadership through strategic innovation and cultural dialogue.
-            </p>
+    <span class="lang-en">
+        © 2024 Arab Youth Union for Creativity and Innovation. All Rights Reserved. <br/>
+        Supporting the next generation of Arab leadership through strategic innovation and cultural dialogue.
+    </span>
+    <span class="lang-ar">
+        جميع الحقوق محفوظة © ٢٠٢٤ الاتحاد العربي للشباب للإبداع والابتكار. <br/>
+        دعم الجيل القادم من القيادات العربية من خلال الابتكار الاستراتيجي والحوار الثقافي.
+    </span>
+</p>
 </div>
 </footer>
 <script>
@@ -774,5 +993,31 @@ void main() {
             card.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
             observer.observe(card);
         });
+
+        // Language toggle implementation
+        function toggleLanguage() {
+            const html = document.documentElement;
+            const currentLang = html.getAttribute('lang') || 'en';
+            const newLang = currentLang === 'en' ? 'ar' : 'en';
+            setLanguage(newLang);
+        }
+
+        function setLanguage(lang) {
+            const html = document.documentElement;
+            html.setAttribute('lang', lang);
+            if (lang === 'ar') {
+                html.setAttribute('dir', 'rtl');
+                document.title = "د. ماجد عاطف العسي | الحقيبة الدبلوماسية";
+            } else {
+                html.setAttribute('dir', 'ltr');
+                document.title = "Dr. Maged Atef El-Essi | Diplomatic Portfolio";
+            }
+            localStorage.setItem('preferred-lang', lang);
+        }
+
+        // Initialize language from localStorage or default to English
+        const savedLang = localStorage.getItem('preferred-lang') || 'en';
+        setLanguage(savedLang);
     </script>
-</body></html>
+</body>
+</html>
